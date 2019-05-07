@@ -1,0 +1,29 @@
+<!--foi colocado um namespace no index.html <base href= "/">.
+palavras da loine:
+  Você pode mudar o valor do href pra configurar um
+namespace para as rotas. Se colocar href-"/login" não
+siginifica que irá redicionar pra rota de login. E apenas o
+nome do namespace.
+Nesse caso a app ficaria localhost:4200/login/login - caso
+a rota de login seja ativada.
+
+-->
+
+<!-- Boas novas:
+https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/routing.md 
+rotas no angular cli﻿ -->
+
+<app-menu-principal *ngIf="mostrarMenu"></app-menu-principal>
+
+
+
+<div class="container">
+  <!--p>Entre com o id curso</p>
+  <input type="text" #idCurso-->
+  <router-outlet [@flyInOut]="in"></router-outlet><!-- [@flyInOut] é uma animação do modulo angular -->
+
+</div>
+<app-dialog ></app-dialog><!--[cabecalho]= "cabecalho teste" [conteudo]="Conteudo teste" [rotutoBotao]="Ok"-->
+<app-hero-message></app-hero-message>
+<!--app-angula-animation></app-angula-animation-->
+

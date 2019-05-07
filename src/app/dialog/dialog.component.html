@@ -1,0 +1,17 @@
+  <!-- Modal Trigger href="#dialog1" routerLink="dialog1"   (click)="open()"-->
+  <!--a class="waves-effect waves-light btn modal-trigger"  id="#dialog1" href="#dialog1" >Modal</a -->
+
+  <!-- Modal Structure -->
+  <div id="dialog1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>{{ this.mens?.cabecalho }}</h4>
+      <p>{{ mens?.conteudo }}</p>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close btn teal lighten-1" (click)="confirmar(true)">Sim</a>
+      <!--  <a href="#!" > foi retirado por causa do CanDeactivate--> 
+        <a   class="modal-action modal-close btn orange darken-1" (click)="confirmar(false)">Não</a>
+
+      <a  class="modal-action modal-close waves-effect waves-green btn-flat">{{ mens?.rotuloBotao  }}</a>
+    </div>
+  </div>

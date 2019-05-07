@@ -1,0 +1,25 @@
+<h5>
+  Criar/ Editar Aluno
+</h5>
+
+<div class="col s12"></div>
+<div class="row">
+  <div class="input-field col s12">
+    <input disabled [(ngModel)]="aluno.id" id="disabled" type="text" class="validate">
+    <label for="disabled" class="active">#</label>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s12">
+      <input  [(ngModel)]="aluno.nome" id="nome" type="text" class="validate" (input)="onInput()"><!--  placeholder="Nome do aluno" -->
+      <label for="nome">Nome</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input [(ngModel)]="aluno.email" id="email" type="email" class="validate" (input)="onInput()">
+      <label for="email">Email</label>
+    </div>
+
+  </div>
+</div>
